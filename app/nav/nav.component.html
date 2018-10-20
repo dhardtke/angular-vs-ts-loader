@@ -1,0 +1,4 @@
+<h2>Stubs</h2>
+<a *ngFor="let ignored of links; let i = index; let last = last" [routerLink]="'/stubs/stub' + i" [style.margin-right]="!last ? '5px' : ''">
+    Stub {{ i }}
+</a>
