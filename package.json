@@ -38,8 +38,8 @@
     "webpack-merge": "~4.1.0"
   },
   "scripts": {
-    "dev:angular": "webpack-dev-server --config config/webpack.angular.js",
-    "dev:ts-loader": "webpack-dev-server --config config/webpack.ts-loader.js",
+    "dev:angular": "webpack-dev-server --config config/webpack.angular.js --profile --progress",
+    "dev:ts-loader": "webpack-dev-server --config config/webpack.ts-loader.js --profile --progress",
     "build:angular": "rimraf dist && node --max-old-space-size=8192 node_modules/webpack/bin/webpack.js --config config/webpack.angular.js --profile --progress",
     "build:ts-loader": "rimraf dist && node --max-old-space-size=8192 node_modules/webpack/bin/webpack.js --config config/webpack.ts-loader.js --profile --progress"
   }
