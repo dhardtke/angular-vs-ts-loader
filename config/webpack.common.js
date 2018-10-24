@@ -42,7 +42,8 @@ module.exports = (env = {}) => {
 
         plugins: [
             new HtmlWebpackPlugin({
-                template: "app/index.html"
+                template: "app/index.html",
+                chunksSortMode: "none" // fixes https://github.com/marcelklehr/toposort/issues/20
             })
         ],
 
@@ -60,16 +61,6 @@ module.exports = (env = {}) => {
 
         mode: "development",
 
-        node: {
-            global: true,
-            process: true,
-            Buffer: false,
-            crypto: false,
-            module: false,
-            clearImmediate: false,
-            setImmediate: false,
-            clearTimeout: true,
-            setTimeout: true
-        }
+        node: false
     }
 };
