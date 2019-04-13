@@ -1,5 +1,6 @@
 dist/
 index.html
+!app/index.html
 *.log
 app/**/*.js
 app/**/*.js.map

@@ -28,7 +28,6 @@ import {NavComponent} from "./nav/nav.component";
                 loadChildren: "./stubs/stub-routing.module#StubRoutingModule"
             }
         ])
-
     ],
     bootstrap: [AppComponent]
 })

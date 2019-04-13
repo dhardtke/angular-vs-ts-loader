@@ -42,8 +42,8 @@ module.exports = (env = {}) => {
 
         plugins: [
             new HtmlWebpackPlugin({
-                template: "app/index.html",
-                chunksSortMode: "none" // fixes https://github.com/marcelklehr/toposort/issues/20
+                chunksSortMode: "none", // fixes https://github.com/marcelklehr/toposort/issues/20,
+                template: "app/index.html"
             })
         ],
 
